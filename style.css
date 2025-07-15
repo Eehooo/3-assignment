@@ -1,0 +1,63 @@
+.container {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.galerija {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+
+.galerija-kartice {
+    text-align: center;
+    border-radius: 20px;
+    background-color: black;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slika {
+    background-color: #6ba2d9;
+}
+
+.slika img {
+    width: 100%;
+    height: auto;
+}
+
+.ime-slike {
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.opis {
+    margin-top: 50px;
+}
+
+
+@media (max-width: 1024px) and (min-width: 601px) {
+    .galerija {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container {
+        margin: auto 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galerija {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        margin: auto 30px;
+    }
+}
